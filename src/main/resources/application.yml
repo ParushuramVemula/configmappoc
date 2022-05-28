@@ -4,8 +4,13 @@ server:
 db:  url: jdbc:oracle:thin@localhost
   user-name: root
   password: root
-  
-management:  endpoints:    web:      exposure:        include: "*"    
-          endpoint:    metrics:      enabled: true
+
+
+management:      
+ endpoints:    web:      exposure:        include:
+        -  "*"
+     
+info:
+  application: "Spring Boot application for Kubernetes config map"
+  version: V1          
       
-    info:      enabled: true    
