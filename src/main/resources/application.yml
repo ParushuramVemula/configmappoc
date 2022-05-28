@@ -1,0 +1,11 @@
+server:
+  port: 9091
+  
+db:  url: jdbc:oracle:thin@localhost
+  user-name: root
+  password: root
+  
+management:  endpoints:    web:      exposure:        include: "*"    
+          endpoint:    metrics:      enabled: true
+      
+    info:      enabled: true    
